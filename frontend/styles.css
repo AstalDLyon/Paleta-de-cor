@@ -1,0 +1,121 @@
+/* Reset Básico */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #437dd4 0%, #98b2df 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #302f2f;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h1::after{
+    content: ""; /* Se estiver usando o pseudo elemento "after" precisa do conteudo, mesmo que seja vazio*/
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #98b2df;
+    border-radius: 2px;
+
+}
+#btn-gerador {
+    background: linear-gradient(45deg, #437dd4 0%, #98b2df 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+#btn-gerador:hover {
+    background: linear-gradient(45deg, #98b2df 0%, #437dd4 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px rgba(52, 71, 177, 0.3);
+}
+
+#btn-gerador:active { /* faz a animação do click*/
+    transform: translateY(0);
+}
+
+.pallet-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.color-box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+}
+
+.color {
+    height: 120px;
+    cursor: pointer;
+}
+
+.color-info {
+    background-color: #fff;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    
+}
+.hex-value {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.copy-btn {
+    cursor: pointer;
+    color: #64748b;
+    transition: color 0.2s;
+}
+
+.copy-btn:hover {
+    color: #437dd4;
+}
+
+@media (max-width: 500px){
+    .pallet-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+

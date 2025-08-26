@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Paletas de Cores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- link para a referencia do font awesome pra ter o icone -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de  Cores</h1>
+
+        <button id="btn-gerador">
+            <i class="fas fa-sync-alt"></i> <!-- icone de atualização -->
+            Gerar Paleta
+        </button>
+        <div class="pallet-container">
+            <!-- Caixa de cor 1-->
+            <div class="color-box">
+                <div class="color" style="background-color: #f7f7f7;"></div>
+                <div class="color-info">
+                    <span class="color-hex">#f7f7f7</span>
+                    <i class="far fa-copy copy-btn" title="Copiar código da cor"></i>
+                </div>
+            </div>
+            <!-- Caixa de cor 2-->
+            <div class="color-box">
+                <div class="color" style="background-color: #000000;"></div>
+                <div class="color-info">
+                    <span class="color-hex">#000000</span>
+                    <i class="far fa-copy copy-btn" title="Copiar código da cor"></i>
+                </div>
+            </div>
+            <!-- Caixa de cor 3-->
+            <div class="color-box">
+                <div class="color" style="background-color: #ff0000;"></div>
+                <div class="color-info">
+                    <span class="color-hex">#ff0000</span>
+                    <i class="far fa-copy copy-btn" title="Copiar código da cor"></i>
+                </div>
+            </div>
+            <!-- Caixa de cor 4-->
+            <div class="color-box">
+                <div class="color" style="background-color: #00ff00;"></div>
+                <div class="color-info">
+                    <span class="color-hex">#00ff00</span>
+                    <i class="far fa-copy copy-btn" title="Copiar código da cor"></i>
+                </div>
+            </div>
+            <!-- Caixa de cor 5-->
+            <div class="color-box">
+                <div class="color" style="background-color: #0000ff;"></div>
+                <div class="color-info">
+                    <span class="color-hex">#0000ff</span>
+                    <i class="far fa-copy copy-btn" title="Copiar código da cor"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
