@@ -1,1 +1,1 @@
-Site gerador de paleta de cor
+Site gerador de paleta de cores
